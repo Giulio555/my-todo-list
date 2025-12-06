@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <title>Esercizio: Uso di Git per Gestire il Codice</title>
+</head>
+<body>
+  <header>
+    <h1>Esercizio: Uso di Git per Gestire il Codice</h1>
+    <p><strong>Obiettivo:</strong> Imparare ad utilizzare i comandi Git di base (git pull, git push, git commit) per testare il flusso di lavoro in un repository locale senza dover condividere il progetto con altri studenti.</p>
+    <p><strong>Descrizione:</strong> Ogni studente lavorerà su una propria copia del repository, testando le operazioni di commit, pull e push.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Procedura</h2>
+      <ol>
+        <li>
+          <h3>Creazione del repository su GitHub</h3>
+          <p>Crea un nuovo repository pubblico su GitHub, chiamato <strong>my-todo-list</strong>. Aggiungi una descrizione breve e crealo vuoto (senza file README, .gitignore, etc.).</p>
+        </li>
+
+        <li>
+          <h3>Clonazione del repository</h3>
+          <p>Clona il repository vuoto appena creato sul tuo computer locale con il comando:</p>
+          <pre><code>git clone https://github.com/tuo-username/my-todo-list.git</code></pre>
+          <p>Naviga nella cartella del progetto:</p>
+          <pre><code>cd my-todo-list</code></pre>
+        </li>
+
+        <li>
+          <h3>Creazione di un file di lavoro</h3>
+          <p>Crea un file chiamato <strong>index.html</strong> e scrivi un semplice codice HTML che includa una lista di cose da fare (to-do list).</p>
+          <p>Aggiungi il file al repository con il comando:</p>
+          <pre><code>git add index.html</code></pre>
+        </li>
+
+        <li>
+          <h3>Commit delle modifiche</h3>
+          <p>Esegui il commit delle modifiche con un messaggio descrittivo, come:</p>
+          <pre><code>git commit -m "Aggiunto file index.html con struttura di base"</code></pre>
+        </li>
+
+        <li>
+          <h3>Push del codice sul repository remoto</h3>
+          <p>Esegui il push delle modifiche sul repository GitHub:</p>
+          <pre><code>git push origin main</code></pre>
+          <p>Dopo aver eseguito il push, verifica su GitHub che il file <strong>index.html</strong> sia stato caricato correttamente.</p>
+        </li>
+
+        <li>
+          <h3>Aggiornamenti locali (modifica del codice)</h3>
+          <p>Apporta una modifica al file <strong>index.html</strong> (ad esempio, aggiungi un nuovo elemento alla lista).</p>
+          <p>Aggiungi e committa le modifiche:</p>
+          <pre><code>git add index.html
+git commit -m "Aggiornata la lista con nuovi elementi"</code></pre>
+        </li>
+
+        <li>
+          <h3>Esegui un pull</h3>
+          <p>Simula l’arrivo di modifiche nel repository remoto (anche se sei l’unico che lavora sul repository, puoi fare delle modifiche in GitHub direttamente e poi fare un pull).</p>
+          <p>Dopo aver fatto una modifica su GitHub, esegui un git pull per recuperare le modifiche:</p>
+          <pre><code>git pull origin main</code></pre>
+        </li>
+
+        <li>
+          <h3>Risoluzione di conflitti (opzionale)</h3>
+          <p>Modifica lo stesso file <strong>index.html</strong> sia localmente che su GitHub, quindi prova a fare un <strong>git pull</strong>. Git ti mostrerà un conflitto che dovrai risolvere manualmente.</p>
+          <p>Dopo aver risolto il conflitto, committa le modifiche risolte.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Domande di verifica</h2>
+      <ol>
+        <li>Cosa fa il comando <strong>git push</strong>?</li>
+        <li>Quando è necessario fare un <strong>git pull</strong>?</li>
+        <li>Cosa succede se hai delle modifiche locali non commesse quando esegui un <strong>git pull</strong>?</li>
+        <li>Cosa significa un conflitto di merge e come si risolve in Git?</li>
+        <li>Qual è la differenza tra il comando <strong>git add</strong> e <strong>git commit</strong>?</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html># my-to-do-list
+# my-to-do-list
+<br>
+# my-to-do-list
