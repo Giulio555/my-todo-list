@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#griglia {
+    max-width: 440px;
+    margin: 0 auto;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+    padding: 10px;
+}
+
+#griglia img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+}
+
+#griglia img[src*="white/white"] {
+    cursor: default;
+    pointer-events: none;
+}
